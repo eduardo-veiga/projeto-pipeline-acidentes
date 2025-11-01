@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+
+# Logs do Airflow
+logs/
+
+# Arquivos de dados brutos - NUNCA ENVIE DADOS PARA O GITHUB!
+landing_zone/
+
+# Arquivos do Power BI (opcional, mas recomendado se for grande)
+# Se o seu .pbix for muito grande, descomente a linha abaixo
+# *.pbix
+
+# Arquivos de IDE
+.vscode/
+.idea/
+
+# Arquivos do Docker (para não enviar os dados dos bancos)
+airflow_pg_data/
+minio_data/
+postgres_dw_data/
+nifi_data/
+nifi_flowfile/
