@@ -92,7 +92,7 @@ services:
     
   # --- 3. Processamento (Spark) ---
   spark-master:
-    image: bitnamilegacy/spark # <-- CORREÇÃO AQUI (sem tag)
+    image: bitnamilegacy/spark 
     container_name: spark-master
     environment:
       - SPARK_MODE=master
@@ -105,7 +105,7 @@ services:
       - data-pipeline-net
 
   spark-worker:
-    image: bitnamilegacy/spark # <-- CORREÇÃO AQUI (sem tag)
+    image: bitnamilegacy/spark 
     container_name: spark-worker
     depends_on:
       - spark-master
